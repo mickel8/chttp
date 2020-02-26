@@ -12,11 +12,12 @@ $(ODIR)/%.o: %.c $(DEPS)
 compile: setup main
 
 setup:
-	rm -rf $(ODIR)
-	mkdir $(ODIR)
+	@mkdir -p $(ODIR)
 
 main: $(OBJ)
 	$(CC) -o $@ $^ $(CFLAGS)
 
 clean:
 	rm -rf $(ODIR) main
+
+.PHONY: clean compile setup
