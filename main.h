@@ -1,3 +1,5 @@
+#define HTTP_P 80
+
 struct msg *deserialize(char *);
 char *serialize(struct msg);
 int send_request(struct msg);
@@ -35,4 +37,3 @@ struct msg {
 	char **header_fields;
 	char *message_body;
 };
-

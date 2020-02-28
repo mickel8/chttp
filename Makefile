@@ -3,7 +3,7 @@ CFLAGS=-I.
 DEPS=main.h
 ODIR=out
 
-_OBJ=main.o
+_OBJ=main.o net.o
 OBJ= $(patsubst %, $(ODIR)/%, $(_OBJ))
 
 $(ODIR)/%.o: %.c $(DEPS)
