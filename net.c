@@ -9,8 +9,7 @@
 #include <endian.h>
 
 #include "net.h"
-
-#define check(RES, MSG) if (RES < 0) perror(MSG) 
+#include "err.h"
 
 void itoip(in_addr_t ip, unsigned char *octets) {
 	octets[3] = (ip >> 0) & 0xFF;

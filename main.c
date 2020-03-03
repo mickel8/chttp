@@ -12,8 +12,7 @@
 
 #include "main.h"
 #include "net.h"
-
-#define check(RES, MSG) if (RES < 0) perror(MSG) 
+#include "err.h"
 
 int main(int argc, char **argv) {
 
