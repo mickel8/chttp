@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-I.
+CFLAGS=-I. -g -Wall
 DEPS=main.h
 ODIR=out
 
